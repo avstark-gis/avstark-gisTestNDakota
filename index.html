@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta name="viewport" content="width=device-width">-->
+		<!--this is in leaflet tutorial for responsive map-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Test for North Dakota Oral History Map</title>
+
+		<!--put your external stylesheet links here-->
+        <link rel="stylesheet" type ="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type ="text/css" href="css/leaflet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.0/MarkerCluster.Default.min.css" />
+		<!--	<script src="js/leaflet.js"></script>-->
+		<link rel="shortcut icon" href="#"><!--fix the .ico error  -->
+		<link rel="stylesheet" type ="text/css" href="css/style.css">
+		
+
+		<!--[if IE<9]>
+			<link rel="stylesheet" href="css/style.ie.css">
+		<![endif]-->
+	</head>
+
+	<body>
+		<!--put your initial page content here-->
+		<div id = "pageWrapper" class = "flex-container">
+			<div id="mydiv">
+			North Dakota Oral History Records<br>
+			Test for Future Map
+			</div><!--mydiv-->
+		
+			<div id="mapWrapper">
+				<div id="map">
+
+				</div><!--map-->
+				
+			</div><!--mapwrapper-->
+		
+			<div class = "flex-container" id = "wrapUp">
+				<br>
+				<br>	
+				<div class = "sourceCite">
+					<h5 id = "author">Map Test by Alissa V Stark | Jan 2022</h5>
+					<h5>Data From:</h5> 
+					<p>Data source one</p> 
+					<p>Data source two</p>
+				</div>	
+				<div class = "sourceCite">
+					<h5>Contributors:</h5>
+					<p>List 1.</p>
+					<p>Additional Information</p>
+					
+				</div>
+			</div><!--wrap up-->
+		</div><!--flex-->	
+		
+		<!--<div id = "panel"></div> if there was a pop up info panel put in map div-->	
+		<!--you can also use this space for internal scripts or stylesheets-->
+		<!--this was the only way I could override the leaflet bug for the icon layers toggle-->
+		<style>
+		.leaflet-touch .leaflet-control-layers-toggle {
+			background-image: url("img/images/layers.png");
+		}
+		</style>
+		<!--place these within <script> or <style> tags-->
+		
+		<script>
+		</script>
+		
+		<!--put your external script links here-->
+		<script src="lib/jquery-3.6.0.js"></script>
+		<script src="js/leaflet.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+		<!--<script> src="data/avg_100.geojson"</script>-->
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>

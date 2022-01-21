@@ -1,0 +1,175 @@
+/*Stylesheet by Alissa Stark, 2021*/
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/*Container for all elements on the page*/
+.flex-container{
+	display: grid;
+    margin: 10px;
+}
+
+/*Title*/
+#mydiv  {
+    color: rgb(65, 36, 16);
+    font-size: xx-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*Wrap the map*/
+
+#mapWrapper {
+    max-width: 970px;
+    width: 100%;
+    margin: 15px auto;
+    position: relative;
+    display:  block;
+    
+}
+/*possible responvie if time to tweak
+/*#map{ 
+    height:100vh;
+    max-height: 450px;
+    width: 100vw;
+    margin: 15px auto;
+    display: block;
+    position: relative;
+    right: 0;
+    left:  0;
+}*/
+#map {
+    max-height: 500px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    left:   0;
+    right:  0;
+    display: block;
+}
+/*for panel if using for pop-up*/
+#panel { 
+    width: 200px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 30px;
+}
+
+/*margin around text in pop up*/
+.leaflet-popup-content { /*margin around text in pop up*/
+    margin: 15px;
+    padding: 0px;
+}
+.leaflet-container { /*this is the container for the popup content*/
+    line-height: 1.5;
+}
+/*container for ledgend*/
+
+
+/*Legend*/
+#attribute-legend{
+    width: 170px;
+    height: 70px;
+    border: 1.5px solid gray;
+    background-color: rgba(241, 242, 213, .90);
+   
+}
+#temporal-legend{
+    border: 1.5px solid gray;
+    border-bottom: 0px;
+    padding-left: 8px;
+    background-color: rgba(241, 242, 213, .90);
+    
+}
+/*container for slider and buttons*/
+.sequence-control-container{
+    width: 270px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, .40);
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid gray;
+    display: inline-block; 
+}
+.skip{
+    height: 35px;
+    width: 35px;
+}
+#reverse {
+    padding-top: 0px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 0px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.range-slider{
+    width: 150px;
+    display: inline-block;
+ 
+}
+#forward {
+    padding-top: 0px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 0px;
+    display:inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*button for layers toggle*/
+.leaflet-touch .leaflet-control-layers-toggle {
+    width: 84px;
+    height: 34px;
+    background-image: url("img/images/layers-2x.png");
+}
+.leaflet-control-layers-toggle:after{ 
+    content:"Layers";
+    font-weight: bold;
+    text-align: right; 
+    font-size: medium;
+    padding-left: 34px;
+    color:#000 ;
+        
+}
+.leaflet-control-layers-toggle{ 
+    background-position:3px 50% ;
+    padding: 5px;
+    text-decoration:none;
+    line-height:36px;
+
+}
+/*other elements on bottom of page*/
+#wrapUp{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sourceCite{
+    display: block;
+}
+#author{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.sourceCite p {
+    font-size: small;
+}
+h5{
+    margin-bottom: 5px;
+
+}
