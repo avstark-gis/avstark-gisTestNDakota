@@ -28,7 +28,7 @@ function createMap() {
     daglum = L.marker([46.7032, -103.0196], {icon: teardrop}).bindPopup('<b>County: Stark</b><br><b>Location Name: </b>Daglum'),
     daglumVicinity1 = L.marker([46.6038, -103.0312], {icon: teardrop}).bindPopup('<b>County: Slope</b><br><b>Location Name: </b>Jensen Farmstead One'),
     daglumVicinity2 = L.marker([46.6037, -103.0311], {icon: teardrop}).bindPopup('<b>County: Slope</b><br><b>Location Name: </b>Jensen Farmstead Two'),
-    daglumVicinity3 = L.marker([46.5992, -103.0304], {icon: teardrop}).bindPopup('<b>County: Slope</b><br><b>Location Name: </b><b>Location name: </b>Rural School'),
+    daglumVicinity3 = L.marker([46.5992, -103.0304], {icon: teardrop}).bindPopup('<b>County: Slope</b><br><b>Location name: </b>Rural School'),
     schefield = L.marker([46.6746, -102.8550], {icon: teardrop}).bindPopup('<b>County: Stark</b><br><b>Location Name: </b>School');
     
     //fix for the icons part 2 of 2 is choosing that icon in above layers
